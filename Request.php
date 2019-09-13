@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @author Łukasz Szpak ( info@dev-bot.pl )
+ * @author Łukasz Szpak ( szpaaaaq@gmail.com )
  * */
 
 namespace App;
@@ -11,7 +11,7 @@ class Request
     /**
      *
      * return $_GET or $_POST value
-     * values give in _POST request have higher priority
+     * values give in _POST request has higher priority
      * @param string key
      * @param string type
      * Types:
@@ -36,9 +36,7 @@ class Request
             case 'int':
                 return is_numeric($value) ? (int) $value : false;
             break;
-
             case 'array':
-
                 if (is_object($value) || is_array($value)) {
                     return (array) $value;
                 }
