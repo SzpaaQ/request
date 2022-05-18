@@ -1,7 +1,9 @@
 <?php
 
 /**
- * @author Łukasz Szpak ( szpaaaaq@gmail.com )
+ * Request.php
+ * @author SzpaQ <szpaaaaq@gmail.com>
+ * @license I DON'T CARE - do whatever you want
  * */
 
 namespace App;
@@ -9,7 +11,6 @@ namespace App;
 class Request
 {
     /**
-     *
      * return $_GET or $_POST value
      * values give in _POST request has higher priority
      * @param string key
@@ -65,7 +66,6 @@ class Request
     /**
      * checks if is post request
      * @return bool true if is post request or false
-     *
      * */
     public function isPost()
     {
@@ -123,9 +123,8 @@ class Request
 
     /**
      * Detect an AJAX request
-     *
      * @return bool true if is ajax request or false
-     */
+     * */
     public function isAjax()
     {
         return (
